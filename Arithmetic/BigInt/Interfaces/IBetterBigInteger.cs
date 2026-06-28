@@ -1,4 +1,4 @@
-﻿namespace Arithmetic.BigInt.Interfaces;
+﻿﻿namespace Arithmetic.BigInt.Interfaces;
 
 
 public interface IBigInteger : IComparable<IBigInteger>, IEquatable<IBigInteger>

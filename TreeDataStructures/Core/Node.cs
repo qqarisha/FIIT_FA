@@ -8,6 +8,7 @@ public class Node<TKey, TValue, TNode>(TKey key, TValue value) where TNode : Nod
     public TNode? Left { get; set; }
     public TNode? Right { get; set; }
     public TNode? Parent { get; set; }
+    public int Height => 1 + Math.Max(Left?.Height ?? 0, Right?.Height ?? 0);
     
     public bool IsLeftChild  => this.Parent != null && this.Parent.Left == this;
     public bool IsRightChild => this.Parent != null && this.Parent.Right == this;
